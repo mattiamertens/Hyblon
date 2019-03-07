@@ -12,19 +12,7 @@ $(window).on("scroll", function() {
         }
       })      // navbar scura
 
-// function button() {
-//   $(".descrizione").toggleClass("vista")
-//
-//   if ($(".descrizione").hasClass("vista")) {
-//       $(".show").html("Show less")
-//       $(".descrizione").animate({height:"135px"});
-//
-//   }
-//   else {
-//     $(".show").html("Show more")
-//     $(".descrizione").animate({height:"580px"});
-//   }
-// }
+
 $(".show").click(buttonino)
 
 var vis=0;
