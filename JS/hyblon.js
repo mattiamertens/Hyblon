@@ -3,17 +3,42 @@ function scompare() {
   $("#caricamento, .inizio").fadeOut(400);
 };
 
+
+   // NAVBAR SCURA //
 $(window).on("scroll", function() {
   if($(window).scrollTop()){
      $('nav').addClass('ontop');
-   }
+          
+  }
   else {
-     $('nav').removeClass('ontop');
-        }
-      })      // navbar scura
+    $('nav').removeClass('ontop');
+    console.log('fd');
+  }
+})   
+
+var currentScrollPosition = $(window).scrollTop();
+console.log(currentScrollPosition);
+      
+// TESTO FADE-IN // // verificare numero pixel necessari
+$(window).on('scroll', function() {
+  if($(document).scrollTop() > 500){  
+    $(window).off("scroll");
+    // alert('letse gooo');
+    // $('.storia').fadeIn();
+    $('.storia').addClass('fadeIn');
+  }
+}); 
+
+$(document).ready(function() {
+  $(this).on("mousemove", function(event) {
+      var position = " Y Coordinate: " + event.pageY
+     console.log(position);       
+  });
+});
 
 
-$(".show").click(buttonino)
+// SHOW MORE //
+$(".show").click(buttonino);
 
 var vis=0;
 function buttonino() {
@@ -28,19 +53,20 @@ function buttonino() {
       $(".show").html("Show more");
       vis=0;
   }
-}
+};
 
+// GOOGLE MAP //
 function initMap() {
   var perugia = {lat: 43.107260, lng: 12.407274};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 15,
+    zoom: 14,
     center: perugia
   });
   var marker = new google.maps.Marker({
     position: perugia,
     map: map
   });
-};  //mappa di google
+};
 
 function active() {
   $(this).addClass("hovered")
@@ -112,18 +138,8 @@ function back(){
 };
 $(".copritutto, .chiudi").click(back); //funzione per togliere lo slideshow aggiuntiva
 $(document).keyup(function(e) {
-if(e.keyCode== 27) {
+  if(e.keyCode== 27) {
     back();
-}
+  }
 });
 $(".box").click(sldshow);
-
-// function attivita() {
-//   $(this).animate({
-//     left: "0px",
-//     width: "+=900px",
-//   });
-//   $(".coverdiv").addClass("hovered")
-// }
-//
-// $(".ac1, .ac2, .ac3, .ac4, .ac5").click(attivita)
