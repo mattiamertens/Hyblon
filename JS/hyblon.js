@@ -37,24 +37,6 @@ $(document).ready(function() {
 });
 
 
-// SHOW MORE //
-$(".show").click(buttonino);
-
-var vis=0;
-function buttonino() {
-  $(".descrizione").toggleClass("vista")
-  if (vis==0) {
-    $(".descrizione").animate({height:"550px"});
-    $(".show").html("Show less");
-    vis=1;
-  } else {
-      $(".descrizione").animate({height:"135px"});
-
-      $(".show").html("Show more");
-      vis=0;
-  }
-};
-
 // GOOGLE MAP //
 function initMap() {
   var perugia = {lat: 43.107260, lng: 12.407274};

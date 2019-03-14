@@ -103,8 +103,9 @@ h3{
   top: 50vh;
   color: white;
   text-align: center;
-  font-size: 42pt;
+  font-size: 12vh;
 }
+
 .casa{
   position: relative;
   max-width: 400px;
@@ -113,6 +114,7 @@ h3{
   position: relative;
   max-width: 500px;
 }
+
 .container_storia{
   display: flex;
   width: auto;
@@ -238,6 +240,10 @@ h3{
   grid-column-gap: 5px;
 } */
 
+.hyblon{
+  font-size: 5vh;
+}
+
 .cmap{
   background-color: blue;
   height: 450px;
@@ -258,4 +264,133 @@ h3{
   background-color: blueviolet;
   font-size: 3vw;
   left: 53%;
+}
+
+
+/* // INIZIO DI PRODOTTI // */
+
+.container_prodotti{
+  height: 1000px;
+}
+
+.prodotto1{
+  height: 333px;
+  background-color: #023C3D;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 1vw;
+}
+.bottiglia1{
+  grid-column:2/4;
+  grid-row: 3/7;
+  background-image: url(../assets/images/olive.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.descrizione_prod1{
+  grid-column: 5/9;
+  grid-row: 3/7;
+  color: white;
+}
+
+
+.prodotto2{
+  height: 333px;
+  display: grid;
+  background-color: #2E6466;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 1vw;
+}
+
+.bottiglia2{
+  grid-column:5/7;
+  grid-row: 3/7;
+  background-image: url(../assets/images/olive.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.descrizione_prod2{
+  grid-column: 2/4;
+  grid-row: 3/7;
+  color: white;
+  text-align: right;
+}
+.prodotto3{
+  height: 333px;
+  background-color: #023C3D;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 1vw;
+}
+.bottiglia3{
+  grid-column:2/4;
+  grid-row: 3/7;
+  background-image: url(../assets/images/olive.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.descrizione_prod3{
+  grid-column: 5/9;
+  grid-row: 3/7;
+  color: white;
+}
+.preparazione{
+  background-color: #2E6466;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+.title_prep{
+  color: white;
+  position: absolute;
+  margin: 0;
+  padding: 1vw 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 400px;
+}
+
+.prep_img1{
+  grid-row: 4/10;
+  grid-column: 2/5;
+  background-color: #fff;
+}
+.prep_img2{
+  grid-row: 4/10;
+  grid-column: 6/9;
+  background-color: #fff;
+}
+.prep_img3{
+  grid-row: 11/16;
+  grid-column: 2/9;
+  background-color: #fff;
+}
+.prep_txt{
+  color: white;
+  grid-row: 4/16;
+  grid-column: 10/15;
+}
+
+.riconoscimenti{
+  height: 300px;
+
+}
+.title_rico{
+  position: absolute;
+  margin: 1vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+.txt_rico{
+  max-width: 700px;
+  position: relative;
+  top: 8vh;
+  left: 4vh; 
 }
