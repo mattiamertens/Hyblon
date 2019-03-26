@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
@@ -54,14 +54,14 @@ body {
 
 li{
   grid-column: 1/4;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(146, 209, 200, 0.4);
   line-height: 9vh;
   list-style: none;
   text-align: center;
   width: 100%;
 }
 .ontop{
-background-color: rgba(0, 0, 0, 0.4);}
+background-color: rgba(3, 79, 80, 0.6);}
 
 a{
   color: white;
@@ -95,20 +95,20 @@ h2{
   top: 20vh;
   color: white;
   text-align: center;
-  background-color: #96A679;
-  font-size: 16pt;
+  font-size: 4vh;
 }
 h3{
   margin: 0 auto;
   top: 50vh;
   color: white;
   text-align: center;
-  font-size: 12vh;
+  font-size: 8vh;
 }
 
 .casa{
   position: relative;
   max-width: 400px;
+  border: 1px solid white;
 }
 .hyblon{
   position: relative;
@@ -244,8 +244,7 @@ h3{
   font-size: 5vh;
 }
 
-.cmap{
-  background-color: blue;
+.cont_map{
   height: 450px;
 }
 
@@ -261,7 +260,6 @@ h3{
   margin: 2%;
   height: 400px;
   width: 41%;
-  background-color: blueviolet;
   font-size: 3vw;
   left: 53%;
 }
@@ -379,8 +377,9 @@ h3{
 }
 
 .riconoscimenti{
-  height: 300px;
-
+  height: 450px;
+  margin-bottom: 1vh;
+  border: #023C3D solid 1px;
 }
 .title_rico{
   position: absolute;
@@ -394,3 +393,5 @@ h3{
   top: 8vh;
   left: 4vh; 
 }
+
+/* INIZIO DI HYBLON */
