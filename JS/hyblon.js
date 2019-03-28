@@ -125,3 +125,31 @@ $(document).keyup(function(e) {
   }
 });
 $(".box").click(sldshow);
+
+
+// SCROLLTO ANIMATIONS
+$('#azienda').click(function() {
+  $('html, body').animate({
+    scrollTop:$('.container_storia').offset().top - 90
+  }, 600)
+});
+$('#prodotti').click(function() {
+  $('html, body').animate({
+    scrollTop:$('.title_prod').offset().top - 60
+  }, 600)
+});
+$('#preparazione').click(function() {
+  $('html, body').animate({
+    scrollTop:$('.title_prep').offset().top - 60
+  }, 600)
+});
+$('#riconoscimenti').click(function() {
+  $('html, body').animate({
+    scrollTop:$('.title_rico').offset().top - 100
+  }, 600)
+});
+$('#contatti').click(function() {
+  $('html, body').animate({
+    scrollTop:$('.cont_map').offset().top -30
+  }, 600)
+});
