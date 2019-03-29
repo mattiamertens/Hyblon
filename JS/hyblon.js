@@ -7,28 +7,27 @@ function scompare() {
    // NAVBAR SCURA //
 $(window).on("scroll", function() {
   if($(window).scrollTop()){
-     $('nav').addClass('ontop');
-          
+     $('nav').addClass('ontop');          
   }
   else {
     $('nav').removeClass('ontop');
-    console.log('fd');
   }
-})   
+});
 
 var currentScrollPosition = $(window).scrollTop();
 console.log(currentScrollPosition);
       
-// TESTO FADE-IN // // verificare numero pixel necessari
+// TESTO FADE-IN // verificare numero pixel necessari
+
 $(window).on('scroll', function() {
-  if($(document).scrollTop() > 500){  
+  if($(document).scrollTop() > 400){  
     $(window).off("scroll");
     // alert('letse gooo');
-    // $('.storia').fadeIn();
     $('.storia').addClass('fadeIn');
   }
 }); 
 
+// COORDINATE DEL MOUSE // 
 $(document).ready(function() {
   $(this).on("mousemove", function(event) {
       var position = " Y Coordinate: " + event.pageY
@@ -152,4 +151,84 @@ $('#contatti').click(function() {
   $('html, body').animate({
     scrollTop:$('.cont_map').offset().top -30
   }, 600)
+});
+
+
+// $(document).scroll(function() {
+//   var cutoff = $(window).scrollTop() + 70;
+  
+//   $('.section').each(function(){
+//       if($(this).offset().top + $(this).height() > cutoff){
+//           $('.section').removeClass('current');
+//           $(this).addClass('current');
+//           return false; // stops the iteration after the first one on screen
+//       }
+//   });
+// });
+
+// HIGHLIGHT NAV SECTION //
+
+$(".welcome").mouseenter(function(){
+  $('#home').addClass('current1');
+});
+$(".welcome").mouseleave(function(){
+  $('#home').removeClass('current1');
+});
+
+$(".preparazione").mouseenter(function(){
+    //  var id = $(this).attr('id');
+    //  $('a').removeClass('active');
+    //  $("[href=#"+id+"]").addClass('active');
+    $('#preparazione').addClass('current1');
+  });
+$(".preparazione").mouseleave(function(){
+    $('#preparazione').removeClass('current1');
+});
+
+$(".azienda").mouseenter(function(){
+    $('#azienda').addClass('current1');
+});
+$(".azienda").mouseleave(function(){
+    $('#azienda').removeClass('current1');
+});
+
+$(".prodotti").mouseenter(function(){
+    $('#prodotti').addClass('current1');
+  });
+  $(".prodotti").mouseleave(function(){
+    $('#prodotti').removeClass('current1');
+});
+
+$(".riconoscimenti").mouseenter(function(){
+    $('#riconoscimenti').addClass('current1');
+  });
+  $(".riconoscimenti").mouseleave(function(){
+    $('#riconoscimenti').removeClass('current1');
+});
+
+$(".cont_of_cont").mouseenter(function(){
+    $('#contatti').addClass('current1');
+  });
+  $(".cont_of_cont").mouseleave(function(){
+    $('#contatti').removeClass('current1');
+});
+
+$(function() {
+                
+  var documentEl = $(document),
+      fadeElem = $('.fade_scroll');
+  
+  documentEl.on('scroll', function() {
+      var currScrollPos = documentEl.scrollTop();
+      
+      fadeElem.each(function() {
+          var $this = $(this),
+              elemOffsetTop = $this.offset().top;
+          if (currScrollPos > elemOffsetTop - 300) {
+            $(this).addClass('fadeIn')
+            // console.log('ok');
+          }
+      }); 
+  });
+  
 });

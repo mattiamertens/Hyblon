@@ -51,6 +51,7 @@ body {
   min-height: 9vh;
   letter-spacing: 0.05em;
   background-color: rgba(146, 209, 200, 0.4);
+  color: white;
 }
 
 ul{
@@ -62,8 +63,9 @@ li{
   list-style: none;
   text-align: center;
   width: 100%;
-  color: white;
+  cursor: pointer;
 }
+
 .ontop{
 background-color: rgba(3, 79, 80, 0.6);}
 
@@ -163,12 +165,6 @@ h3{
   transform: translate(10%);
 }
 
-.fadeIn{
-  opacity: 1;
-  transition: .6s;
-  transform: translate(-1%);
-}
-
 
 
 /* // INIZIO DI PRODOTTI // */
@@ -202,7 +198,6 @@ h3{
   background-image: url(../assets/images/olive.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .descrizione_prod1{
   grid-column: 5/9;
@@ -219,14 +214,12 @@ h3{
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 1vw;
 }
-
 .bottiglia2{
   grid-column:5/7;
   grid-row: 3/7;
   background-image: url(../assets/images/olive.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .descrizione_prod2{
   grid-column: 2/4;
@@ -234,6 +227,7 @@ h3{
   color: white;
   text-align: right;
 }
+
 .prodotto3{
   height: 666px;
   background-color: #023C3D;
@@ -254,6 +248,9 @@ h3{
   grid-column: 5/9;
   grid-row: 3/7;
   color: white;
+}
+.fade_scroll{
+  opacity: 0;
 }
 
 .preparazione{
@@ -372,4 +369,20 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 1.5vw;
+}
+
+
+/* JQUERY CLASSES */
+.current1{
+color: red;
+}
+.fadeIn{
+  opacity: 1;
+  transition: .6s;
+  transform: translate(-1%);
+}
+.fadeOut{
+  opacity: 0;
+  transition: .6s;
+  transform: translate(-1%);
 }
