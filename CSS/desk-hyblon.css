@@ -386,3 +386,16 @@ color: red;
   transition: .6s;
   transform: translate(-1%);
 }
+.line{
+  width: 55%;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  border-radius: 10%;
+  transform: translate(0, -15px);
+  opacity: 0;
+}
+.prova1{
+  background-color: red;
+  opacity: 1;
+}

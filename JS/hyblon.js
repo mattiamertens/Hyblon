@@ -169,48 +169,48 @@ $('#contatti').click(function() {
 // HIGHLIGHT NAV SECTION //
 
 $(".welcome").mouseenter(function(){
-  $('#home').addClass('current1');
+  $('li:nth-child(1) > .line').addClass('prova1');
 });
 $(".welcome").mouseleave(function(){
-  $('#home').removeClass('current1');
+  $('li:nth-child(1) > .line').removeClass('prova1');
+});
+
+$(".azienda").mouseenter(function(){
+    $('li:nth-child(2) > .line').addClass('prova1');
+});
+$(".azienda").mouseleave(function(){
+    $('li:nth-child(2) > .line').removeClass('prova1');
+});
+
+$(".prodotti").mouseenter(function(){
+    $('li:nth-child(3) > .line').addClass('prova1');
+  });
+  $(".prodotti").mouseleave(function(){
+    $('li:nth-child(3) > .line').removeClass('prova1');
 });
 
 $(".preparazione").mouseenter(function(){
     //  var id = $(this).attr('id');
     //  $('a').removeClass('active');
     //  $("[href=#"+id+"]").addClass('active');
-    $('#preparazione').addClass('current1');
+    $('li:nth-child(4) > .line').addClass('prova1');
   });
 $(".preparazione").mouseleave(function(){
-    $('#preparazione').removeClass('current1');
-});
-
-$(".azienda").mouseenter(function(){
-    $('#azienda').addClass('current1');
-});
-$(".azienda").mouseleave(function(){
-    $('#azienda').removeClass('current1');
-});
-
-$(".prodotti").mouseenter(function(){
-    $('#prodotti').addClass('current1');
-  });
-  $(".prodotti").mouseleave(function(){
-    $('#prodotti').removeClass('current1');
+    $('li:nth-child(4) > .line').removeClass('prova1');
 });
 
 $(".riconoscimenti").mouseenter(function(){
-    $('#riconoscimenti').addClass('current1');
+    $('li:nth-child(5) > .line').addClass('prova1');
   });
   $(".riconoscimenti").mouseleave(function(){
-    $('#riconoscimenti').removeClass('current1');
+    $('li:nth-child(5) > .line').removeClass('prova1');
 });
 
 $(".cont_of_cont").mouseenter(function(){
-    $('#contatti').addClass('current1');
+    $('li:nth-child(6) > .line').addClass('prova1');
   });
   $(".cont_of_cont").mouseleave(function(){
-    $('#contatti').removeClass('current1');
+    $('li:nth-child(6) > .line').removeClass('prova1');
 });
 
 $(function() {
@@ -222,12 +222,11 @@ $(function() {
       var currScrollPos = documentEl.scrollTop();
       
       fadeElem.each(function() {
-          var $this = $(this),
+        var $this = $(this),
               elemOffsetTop = $this.offset().top;
-          if (currScrollPos > elemOffsetTop - 300) {
+        if (currScrollPos > elemOffsetTop - 300) {
             $(this).addClass('fadeIn')
-            // console.log('ok');
-          }
+        }
       }); 
   });
   
