@@ -7,10 +7,10 @@ function scompare() {
    // NAVBAR SCURA //
 $(window).on("scroll", function() {
   if($(window).scrollTop()){
-     $('nav').addClass('ontop');          
+     $('.wrapper').addClass('ontop');          
   }
   else {
-    $('nav').removeClass('ontop');
+    $('.wrapper').removeClass('ontop');
   }
 });
 
@@ -228,6 +228,5 @@ $(function() {
             $(this).addClass('fadeIn')
         }
       }); 
-  });
-  
+  });  
 });
