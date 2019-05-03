@@ -27,11 +27,18 @@ $(window).on('scroll', function() {
   }
 }); 
 
+$(window).on('scroll', function() {
+  if($(document).scrollTop() > 400){  
+    // $(window).off("scroll");
+    $('#home').fadeIn(700);
+  }
+}); 
+
 // COORDINATE DEL MOUSE // 
 $(document).ready(function() {
   $(this).on("mousemove", function(event) {
       var position = " Y Coordinate: " + event.pageY
-     console.log(position);       
+      console.log(position);       
   });
 });
 

@@ -34,7 +34,7 @@ body {
   display: flex;
   position: fixed;
   /* grid-template-columns: repeat(8, 1fr); */
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 600;
   min-height: 9vh;
   letter-spacing: 0.05em;
@@ -67,6 +67,7 @@ a{
 
 #home{
   grid-column:2/3;
+  display: none;
 }
 #azienda{
   grid-column: 3/4;
@@ -136,7 +137,6 @@ h2{
   position: relative;
   text-align: center;
   font-size: 12pt;
-  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin: 10px;
 }
@@ -149,7 +149,7 @@ h2{
 }
 .storia{
   position: relative;
-  margin: 10px;
+  padding: 10px 0 0 25px;
   width: 60%;
   height: 100%;
   opacity: 0;
@@ -289,7 +289,6 @@ h2{
   transform: translate(-50%);
   max-width: 400px;
   font-size: 3vw;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
@@ -326,7 +325,6 @@ h2{
   left: 50%;
   transform: translate(-50%);
   font-size: 3vw;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 .txt_rico{
@@ -378,13 +376,11 @@ p {
 
 .title_cont{
   font-size: 2vw;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-align: center;
   margin: 0;
 }
 .contact_list{
-  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 1.5vw;
 }
@@ -397,7 +393,7 @@ color: red;
 .fadeIn{
   opacity: 1;
   transition: .6s;
-  transform: translate(-1%);
+  transform: translate(-10px);
 }
 .fadeOut{
   opacity: 0;
