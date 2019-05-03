@@ -389,8 +389,12 @@ p {
 #button{
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
-  font-weight: 2em;
+  transform: translate(-50%, -150%);
+  width: 51px;
+  height: 51px;
+  color: white;
+  background-image: url(../assets/icons/back-to-top.svg);
+  background-size: cover;
 }
 
 
