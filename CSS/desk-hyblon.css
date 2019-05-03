@@ -363,6 +363,11 @@ p {
   background-size: cover;
 }
 
+/* MOBILE VERSION */
+@media screen and (max-width:480px){
+  
+}
+
 
 /* JQUERY CLASSES */
 .current1{
