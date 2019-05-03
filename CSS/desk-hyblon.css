@@ -64,7 +64,9 @@ a{
   color: white;
   text-decoration: none;
 }
-
+ul>li:hover{
+  font-size: 1.5em;
+}
 #home{
   grid-column:2/3;
   display: none;
@@ -383,6 +385,12 @@ p {
 .contact_list{
   font-weight: 300;
   font-size: 1.5vw;
+}
+#button{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 2em;
 }
 
 

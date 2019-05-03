@@ -173,6 +173,9 @@ $('#contatti').click(function() {
 //   });
 // });
 
+
+
+
 // HIGHLIGHT NAV SECTION //
 
 $(".welcome").mouseenter(function(){
@@ -220,9 +223,11 @@ $(".cont_of_cont").mouseenter(function(){
     $('li:nth-child(6) > .line').removeClass('prova1');
 });
 
+
+
+// FADE IN TEXT //
 $(function() {
-                
-  var documentEl = $(document),
+ var documentEl = $(document),
       fadeElem = $('.fade_scroll');
   
   documentEl.on('scroll', function() {
@@ -236,4 +241,10 @@ $(function() {
         }
       }); 
   });  
+});
+
+// BACK TO TOP //
+$("#button").on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, 600);
 });
