@@ -361,9 +361,6 @@ p {
 /* MOBILE VERSION */
 @media screen and (max-width:480px){
 
-  body{
-    /* background-color: red; */
-  }
   .nav{
     position: fixed;
     z-index: 1000;
