@@ -52,7 +52,7 @@ a{
 }
 
 @media screen and (min-width:800px) {
-  ul>li:hover{
+  ul.wrapper>li:hover{
     font-size: 1.5em;
   }
 }
@@ -149,7 +149,7 @@ h2{
 }
 
 .prodotto1{
-  height: 666px;
+  height: 633px;
   background-color: #023C3D;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -163,6 +163,7 @@ h2{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .nome_prod1{
   grid-column: 5/7;
   grid-row: 2/4;
@@ -176,7 +177,7 @@ h2{
 
 
 .prodotto2{
-  height: 666px;
+  height: 633px;
   display: grid;
   background-color: #2E6466;
   grid-template-columns: repeat(8, 1fr);
@@ -204,7 +205,7 @@ h2{
 }
 
 .prodotto3{
-  height: 666px;
+  height: 633px;
   background-color: #023C3D;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -213,7 +214,7 @@ h2{
 }
 .bottiglia3{
   grid-column:2/4;
-  grid-row: 2/7;
+  grid-row: 2/8;
   background-image: url(../assets/images/olive.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
@@ -320,17 +321,19 @@ p {
   left: 50%;
   transform: translate(-50%);
   box-shadow: 5px 10px 18px #292929;
+  display: flex;
+
 }
 
 #map {
-  position: absolute;
-  height: 315px;
+  position: static;
+  height: 90%;
   width: 54%;
-  margin: 2%;
+  margin: auto 2%;
 }
 
 .contacts{
-  position: absolute;
+  position: static;
   margin: 2%;
   height: 360px;
   width: 41%;
@@ -427,15 +430,13 @@ p {
   .nome_prod1{
     transform: translate(20px);
     font-size: 20px;
+    font-weight: 600;
   }
   .descrizione_prod1{
     max-width: 80%;
     padding: 15px 0 30px 30px;
   }
   .bottiglia1{
-    background-image: url(../assets/images/olive.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 250px;
     width: 200px;
     margin: 0 auto;
@@ -450,6 +451,7 @@ p {
     transform: translate(20px);
     font-size: 20px;
     padding-top: 5vw;
+    font-weight: 600;
   }
   .descrizione_prod2{
     max-width: 80%;
@@ -457,9 +459,6 @@ p {
     text-align: left;
   }
   .bottiglia2{
-    background-image: url(../assets/images/olive.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 250px;
     width: 200px;
     margin: 0 auto;
@@ -474,15 +473,13 @@ p {
     transform: translate(20px);
     font-size: 20px;
     padding-top: 5vw;
+    font-weight: 600;
   }
   .descrizione_prod3{
     max-width: 80%;
     padding: 15px 0 30px 30px;
   }
   .bottiglia3{
-    background-image: url(../assets/images/olive.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 250px;
     width: 200px;
     margin: 0 auto;
@@ -515,13 +512,14 @@ p {
   }
   .prep_txt{
     grid-row: 3/8;
-    grid-column: 3/12;
+    grid-column: 3/16;
     padding-left: 10px;
   }
 
   /* INIZIO DI RICONOSCIMENTI */
   .riconoscimenti{
-    height: 650px;
+    min-height: 650px;
+    height: auto;
   }
   .title_rico{
     font-size: 22px;
@@ -529,12 +527,12 @@ p {
     padding: 1vw 0 5vw 0;
   }
   .txt_rico{
-    max-width: 360px;
+    max-width: 90%;
     position: relative;
     top: 5vh;
     left: 0%;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 25%;
   }
 
    /* INIZIO DI CONTATTI */
@@ -544,20 +542,17 @@ p {
   .cont_map{
     height: 360px;
     width: 90%;
-    top: -80px;
+    top: -20vw;
     left: 50%;
     transform: translate(-50%);
-    display: flex;
     flex-wrap: wrap;
   }
   #map {
-    position: static;
     height: 215px;
     width: 96%;
     margin: 2% auto;
   }
   .contacts{
-    position: static;
     height: auto;
     width: 81%;
     font-size: 3vw;
@@ -568,10 +563,6 @@ p {
     font-weight: 300;
     text-align: left;
     margin: 0;
-  }
-  .contact_list{
-    font-weight: 300;
-    font-size: 1.5vw;
   }
   .contact_list li{
     line-height: 4vh;
