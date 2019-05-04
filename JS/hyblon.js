@@ -251,11 +251,14 @@ $("#button").on('click', function(e) {
 
 
 // FUNZIONI PER MOBILE //
+
+// SHOW MENU //
 $(".drop_menu").on('click', function(){
   $(".wrapper").toggleClass("active");
   $("body").toggleClass('lock');
 });
 
+// HIDE MENU //
 $(".wrapper").on("click", function() {
   $(this).removeClass("active");
   $("body").removeClass("lock");

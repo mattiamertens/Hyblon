@@ -382,16 +382,9 @@ p {
     z-index: 1000;
   }
   .wrapper{
-    margin: 0;
     display: none;
-    position: fixed;
-    font-size: 0.9em;
-    font-weight: 600;
     min-height: 100vh;
-    letter-spacing: 0.05em;
     background-color: rgba(146, 209, 200, 1);
-    color: white;
-    z-index: 1000;
     width: 100%;
     overflow: hidden;
   }
@@ -405,6 +398,13 @@ p {
   li{
     text-align: start;
     margin-left: 20px;
+  }
+
+  .txt_rico{
+    max-width: 360px;
+    position: relative;
+    top: 15vh;
+    left: 2vh; 
   }
 }
 
