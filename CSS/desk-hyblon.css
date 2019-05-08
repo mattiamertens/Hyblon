@@ -215,9 +215,15 @@ h2{
 .bottiglia3{
   grid-column:2/4;
   grid-row: 2/8;
-  background-image: url(../assets/images/olive.jpg); 
+  /* background-image: url(../assets/images/olive.jpg);  */
   background-size: cover;
   background-repeat: no-repeat;
+  width: auto;
+  overflow: hidden;
+}
+.pic{
+  max-width: 670px;
+  max-height: 472px;
 }
 .nome_prod3{
   grid-column: 5/7;
@@ -480,11 +486,19 @@ p {
     padding: 15px 0 30px 30px;
   }
   .bottiglia3{
-    height: 250px;
-    width: 200px;
+    max-height: 250px;
+    max-width: 200px;
     margin: 0 auto;
     transform: translate(0, -10px);
   }
+.pic{
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+  }
+
 
   /* INIZIO DI PREPARAZIONE */
   .preparazione{

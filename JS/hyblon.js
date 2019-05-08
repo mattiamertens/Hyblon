@@ -111,26 +111,44 @@ function initMap() {
 //       prevImg.addClass('active').css('z-index', 10);
 //     }
 //   });
-// }); //slideshow di INDEX
+// }); 
 
 
-function sldshow() {
-  $("nav, .language").addClass("novis");
-  $(".copritutto").toggleClass("visibile");
-  $(".slider-in").toggleClass("sldshow")
-}; //attivare lo slideshow fasullo
-function back(){
-    $("nav, .language").removeClass("novis");
-    $(".copritutto").removeClass("visibile");
-    $(".slider-in").removeClass("sldshow");
-};
-$(".copritutto, .chiudi").click(back); //funzione per togliere lo slideshow aggiuntiva
-$(document).keyup(function(e) {
-  if(e.keyCode== 27) {
-    back();
+//slideshow di INDEX
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("pic");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
-});
-$(".box").click(sldshow);
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "inline-block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+// function sldshow() {
+//   $("nav, .language").addClass("novis");
+//   $(".copritutto").toggleClass("visibile");
+//   $(".slider-in").toggleClass("sldshow")
+// }; //attivare lo slideshow fasullo
+// function back(){
+//     $("nav, .language").removeClass("novis");
+//     $(".copritutto").removeClass("visibile");
+//     $(".slider-in").removeClass("sldshow");
+// };
+// $(".copritutto, .chiudi").click(back); //funzione per togliere lo slideshow aggiuntiva
+// $(document).keyup(function(e) {
+//   if(e.keyCode== 27) {
+//     back();
+//   }
+// });
+// $(".box").click(sldshow);
 
 
 // SCROLLTO ANIMATIONS
