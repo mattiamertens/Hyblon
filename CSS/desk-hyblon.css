@@ -222,7 +222,6 @@ h2{
   overflow: hidden;
 }
 .pic{
-  max-width: 670px;
   max-height: 472px;
 }
 .nome_prod3{
@@ -298,10 +297,10 @@ h2{
   font-weight: 300;
 }
 .txt_rico{
-  max-width: 900px;
+  max-width: 90%;
   position: relative;
   top: 15vh;
-  left: 10vh; 
+  left: 7vh; 
 }
 p {
   padding: 10px 0;
@@ -377,7 +376,7 @@ p {
   .wrapper{
     display: none;
     min-height: 100vh;
-    background-color: rgba(146, 209, 200, 1);
+    background-color: #023C3D;
     width: 100%;
     overflow: hidden;
   }
