@@ -173,6 +173,7 @@ h2{
 .descrizione_prod1{
   grid-column: 5/8;
   grid-row: 3/7;
+  overflow: auto;
 }
 
 
@@ -202,6 +203,7 @@ h2{
   grid-row: 3/7;
   text-align: right;
   /* transform: translate(0, -25px); */
+  overflow: auto;
 }
 
 .prodotto3{
@@ -234,6 +236,7 @@ h2{
   grid-column: 5/8;
   grid-row: 3/7;
   /* transform: translate(0, -25px); */
+  overflow: auto;
 }
 .fade_scroll{
   opacity: 0;
