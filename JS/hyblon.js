@@ -114,11 +114,9 @@ function initMap() {
 // }); 
 
 
-//slideshow di INDEX
-
+//slideshow1 di INDEX
 var myIndex = 0;
 carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("pic");
@@ -129,6 +127,21 @@ function carousel() {
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "inline-block";  
   setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+//slideshow2 di INDEX
+var myIndex1 = 0;
+carousel1();
+function carousel1() {
+  var i;
+  var x = document.getElementsByClassName("pic1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex1++;
+  if (myIndex1 > x.length) {myIndex1 = 1}    
+  x[myIndex1-1].style.display = "inline-block";  
+  setTimeout(carousel1, 2000); // Change image every 2 seconds
 }
 
 

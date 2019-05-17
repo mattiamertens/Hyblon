@@ -160,9 +160,10 @@ h2{
 .bottiglia1{
   grid-column:2/4;
   grid-row: 2/8;
-  background-image: url(../assets/images/olive.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
+  width: auto;
+  overflow: hidden;
 }
 
 .nome_prod1{
@@ -225,6 +226,9 @@ h2{
   overflow: hidden;
 }
 .pic{
+  max-height: 472px;
+}
+.pic1{
   max-height: 472px;
 }
 .nome_prod3{
