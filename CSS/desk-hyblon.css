@@ -368,6 +368,19 @@ p {
   background-image: url(../assets/icons/back-to-top.svg);
   background-size: cover;
 }
+.footer{
+  max-width: 100%;
+  min-height: 40px;
+  background-color: rgba(70, 70, 70, 1);
+  font-size: 13px;
+}
+.foot_text{
+  line-height: 40px;
+  max-width: 95%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
 
 /* MOBILE VERSION */
 @media screen and (max-width:480px){
@@ -586,14 +599,17 @@ p {
     font-size: 14px;
   }
   #button{
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -120%);
+  }
+  .foot_text{
+    font-size: 11px;
   }
 }
 
 
 /* JQUERY CLASSES */
 .current1{
-color: red;
+  color: red;
 }
 .fadeIn{
   opacity: 1;
