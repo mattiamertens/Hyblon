@@ -190,6 +190,11 @@ $('#contatti').click(function() {
     scrollTop:$('.cont_map').offset().top -30
   }, 600)
 });
+$('#territorio').click(function() {
+  $('html, body').animate({
+    scrollTop:$('.territorio').offset().top -30
+  }, 600)
+});
 
 
 // $(document).scroll(function() {
@@ -240,15 +245,21 @@ $(".preparazione").mouseleave(function(){
     $('li:nth-child(4) > .line').removeClass('prova1');
 });
 
-$(".riconoscimenti").mouseenter(function(){
+$(".territorio").mouseenter(function(){
     $('li:nth-child(5) > .line').addClass('prova1');
   });
-  $(".riconoscimenti").mouseleave(function(){
+  $(".territorio").mouseleave(function(){
     $('li:nth-child(5) > .line').removeClass('prova1');
+});
+$(".riconoscimenti").mouseenter(function(){
+    $('li:nth-child(6) > .line').addClass('prova1');
+  });
+  $(".riconoscimenti").mouseleave(function(){
+    $('li:nth-child(6) > .line').removeClass('prova1');
 });
 
 $(".cont_of_cont").mouseenter(function(){
-    $('li:nth-child(6) > .line').addClass('prova1');
+    $('li:nth-child(7) > .line').addClass('prova1');
   });
   $(".cont_of_cont").mouseleave(function(){
     $('li:nth-child(6) > .line').removeClass('prova1');

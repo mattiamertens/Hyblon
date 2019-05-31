@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   background-color: #023C3D;
+  color: white;
 }
 
 #sp2{
@@ -18,7 +19,7 @@ body {
   margin: 0;
   display: flex;
   position: fixed;
-  font-size: 0.9em;
+  font-size: 0.86em;
   font-weight: 600;
   min-height: 9vh;
   letter-spacing: 0.05em;
@@ -75,7 +76,6 @@ h2{
   padding: 10px 13px;
   border-radius: 4px;
   top: 20vh;
-  color: white;
   text-align: center;
   font-size: 4vh;
   font-weight: 400;
@@ -91,7 +91,6 @@ h2{
   max-width: 500px;
   margin: 0 auto;
   top: 50vh;
-  color: white;
   text-align: center;
   font-size: 8vh;
   font-weight: 600;
@@ -106,7 +105,6 @@ h2{
   transform: translate(-50%);
   width: 90%;
   height: 400px;
-  color: white;
 }
 .cit{
   text-align: center;
@@ -134,7 +132,6 @@ h2{
 
 .container_prodotti{
   height: auto;
-  color: white;
   background-color: #2E6466;
 }
 .title_prod{
@@ -257,7 +254,6 @@ h2{
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
   grid-gap: 1vw;
-  color: white;
 }
 
 .title_prep{
@@ -291,11 +287,29 @@ h2{
   grid-column: 11/15;
 }
 
+/* TERRITORIO */
+.territorio{
+  height: 600px;
+  width: 100%; 
+}
+.title_ter{
+  position: absolute;
+  margin: 0;
+  padding: 2vw 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 400px;
+  font-size: 3vw;
+  font-weight: 300;
+}
+
+
+
 /* INIZIO DI RICONOSCIMENTI */
 .riconoscimenti{
   height: 730px;
-  color: white;
   position: relative;
+  background-color: #2E6466;
 }
 .title_rico{
   position: absolute;
@@ -324,7 +338,6 @@ p {
   background-size: cover;
   width: 100%;
   height: 400px;
-  color: white;
 }
 
 .cont_map{
@@ -364,7 +377,11 @@ p {
 }
 .contact_list{
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  position: relative;
+}
+.contact_list>li{
+  text-align: left;
 }
 #button{
   position: absolute;
