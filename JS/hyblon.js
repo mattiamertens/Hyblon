@@ -45,13 +45,13 @@ $(document).ready(function() {
 
 // GOOGLE MAP //
 function initMap() {
-  var perugia = {lat: 43.107260, lng: 12.407274};
+  var hyblon = {lat: 37.106251, lng: 14.949477};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: perugia
+    zoom: 12,
+    center: hyblon
   });
   var marker = new google.maps.Marker({
-    position: perugia,
+    position: hyblon,
     map: map
   });
 };
@@ -262,7 +262,7 @@ $(".cont_of_cont").mouseenter(function(){
     $('li:nth-child(7) > .line').addClass('prova1');
   });
   $(".cont_of_cont").mouseleave(function(){
-    $('li:nth-child(6) > .line').removeClass('prova1');
+    $('li:nth-child(7) > .line').removeClass('prova1');
 });
 
 
