@@ -447,6 +447,7 @@ p {
     background-color: #023C3D;
     width: 100%;
     overflow: hidden;
+    font-size: 1em;
   }
   
   .line_vertical{
@@ -455,7 +456,7 @@ p {
     height: 15px;
     background-color: whitesmoke;
     border-radius: 10%;
-    transform: translate(26px, -35px);
+    transform: translate(27px, -35px);
     opacity: 1; 
   }
   .english{
