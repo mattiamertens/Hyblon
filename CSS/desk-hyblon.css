@@ -56,44 +56,38 @@ a{
   ul.wrapper>li:hover{
     font-size: 1.5em;
   }
+  .dropdown {
+    position: relative;
+    background-image: url(../assets/icons/globe.svg);
+    width: 33px;
+    height: 33px;
+    left: 4.5vh;
+    top: 4.5vh;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translate(-13px, 44px);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block; 
+    font-size: 0.7em;
+  }
+  #language:hover .dropdown-content {display: block;}
 }
 #home{
   display: none;
 }
-/* ////////////////////////////// */
-.dropdown {
-  position: relative;
-  background-image: url(../assets/icons/globe.svg);
-  width: 26px;
-  height: 26px;
-  left: 4.5vh;
-  top: 4.5vh;
-  transform: translate(-50%, -50%);
-}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
-/* ///////////////// */
 
 .pano{
   background-size: cover;
@@ -453,6 +447,20 @@ p {
     background-color: #023C3D;
     width: 100%;
     overflow: hidden;
+  }
+  
+  .line_vertical{
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    transform: translate(26px, -35px);
+    opacity: 1; 
+  }
+  .english{
+    position: relative;
+    margin-left: 20px;
   }
   .drop_menu{
     background: url(../assets/icons/menu1.svg) no-repeat 2% center;
