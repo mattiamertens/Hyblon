@@ -465,8 +465,8 @@ p {
   }
   .drop_menu{
     background: url(../assets/icons/menu1.svg) no-repeat 2% center;
-    width: 50px;
-    height:50px;
+    width: 37px;
+    height:37px;
     margin: 20px;
     cursor: pointer;
   }
