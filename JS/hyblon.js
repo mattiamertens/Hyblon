@@ -295,13 +295,15 @@ $("#button").on('click', function(e) {
 // FUNZIONI PER MOBILE //
 
 // SHOW MENU //
-$(".drop_menu").on('click', function(){
+$(".drop_menu, .wrapper, .drop_menu_x").on('click', function(){
   $(".wrapper").toggleClass("active");
   $("body").toggleClass('lock');
+  $('.drop_menu').toggleClass('display_menu');
+  $('.drop_menu_x').toggleClass('display_menu_x');
 });
 
 // HIDE MENU //
-$(".wrapper").on("click", function() {
-  $(this).removeClass("active");
-  $("body").removeClass("lock");
-})
+// $(".wrapper").on("click", function() {
+//   $(this).removeClass("active");
+//   $("body").removeClass("lock");
+// })
