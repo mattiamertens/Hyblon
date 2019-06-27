@@ -64,7 +64,6 @@ a{
     left: 4.5vh;
     top: 4.5vh;
     transform: translate(-50%, -50%);
-  
   }
   
   .dropdown-content {
@@ -81,9 +80,11 @@ a{
     text-decoration: none;
     display: block; 
     font-size: 0.7em;
+
   }
   #language:hover .dropdown-content {display: block;}
 }
+
 #home{
   display: none;
 }
